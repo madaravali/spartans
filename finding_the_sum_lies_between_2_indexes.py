@@ -1,5 +1,5 @@
-a=33
-d=[1,4,20,3,10,5]
+a=int(input())
+d=[int(i) for i in input().split()]
 for i in range(len(d)):
     for j in range(i+1,len(d)):
         sum=d[i]
@@ -10,3 +10,4 @@ for i in range(len(d)):
         if(sum>a):
             i=i+1
             continue
+        
