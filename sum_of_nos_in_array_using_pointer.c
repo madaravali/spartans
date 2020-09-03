@@ -6,7 +6,6 @@ int main(void)
   {
     scanf("%d",&b[i]);
   }
-  
   for(i=0;i<5;i++)
   {
      d=&b[i];
