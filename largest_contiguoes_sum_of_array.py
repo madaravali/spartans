@@ -1,4 +1,4 @@
-a=[1,2,-2]
+a=[int(x) for x in input().split()]
 sum=0
 sum1=0
 l=[]
