@@ -8,7 +8,15 @@ while(i<j):
         j=j-1
     elif(arr[i]+arr[j]<sum):
         i=i+1
-    else:
+    elif((arr[i]==arr[j])&(arr[i]+arr[j]==sum)):
+        print(i,j)
+        j=j-1
+        if(j==i+1):
+            print(i,j)
+            i=i+1
+            while(arr[j]==arr[j+1]):
+                j=j+1
+    elif((arr[i]+arr[j])==sum):
         print(i,j)
         if(arr[j]==arr[j-1]):
             j=j-1
