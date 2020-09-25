@@ -1,0 +1,17 @@
+arr=[int(x) for x in input().split()]
+arr.sort()
+i=0
+j=len(arr)-1
+sum=int(input())
+while(i<j):
+    if(arr[i]+arr[j]>sum):
+        j=j-1
+    elif(arr[i]+arr[j]<sum):
+        i=i+1
+    else:
+        print(i,j)
+        if(arr[j]==arr[j-1]):
+            j=j-1
+        else:
+            i=i+1
+            j=j+1
